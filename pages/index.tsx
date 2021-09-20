@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import Header from '../components/Header/index'
+import {Paper} from "@material-ui/core";
+import Content from "../components/Content/Content";
 
 export default function Home() {
+    // @ts-ignore
     return (
         <div>
             <Head>
@@ -14,6 +17,13 @@ export default function Home() {
                             rel="stylesheet"/>
             </Head>
             <Header/>
+            <div>
+                <div className='leftSide'></div>
+                <div className='content'>
+                    <Content/>
+                </div>
+                <div className='rightSide'></div>
+            </div>
         </div>
     )
 }
